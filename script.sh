@@ -15,7 +15,7 @@
 # Files and locations
 DMRIDFILE=/usr/local/etc/DMRIds.dat
 DMRHOSTS=/usr/local/etc/DMR_Hosts.txt
-RADIOIDDB=/tmp/user.csv
+RADIOIDDB=/usr/local/etc/user.csv
 GROUPSTXT=/usr/local/etc/groups.txt
 STRIPPED=/usr/local/etc/stripped.csv
 COUNTRIES=/usr/local/etc/country.csv
