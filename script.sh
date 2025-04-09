@@ -15,7 +15,7 @@
 # Files and locations
 DMRIDFILE=/usr/local/etc/DMRIds.dat
 DMRHOSTS=/usr/local/etc/DMR_Hosts.txt
-RADIOIDDB=/usr/local/etc/user.csv
+RADIOIDDB=/tmp/user.csv
 GROUPSTXT=/usr/local/etc/groups.txt
 STRIPPED=/usr/local/etc/stripped.csv
 COUNTRIES=/usr/local/etc/country.csv
@@ -66,7 +66,7 @@ done
 # Generate Host Files
 
 curl 'https://barrandovhblink.jednoduse.cz/dmrcz/DMRIds.dat' 2>/dev/null > ${DMRIDFILE}
-curl ´http://barrandovhblink.jednoduse.cz/dmrcz/DMR_Hosts.txt´ 2>/dev/null > ${DMRHOSTS}
+curl 'https://barrandovhblink.jednoduse.cz/dmrcz/DMR_Hosts.txt' 2>/dev/null > ${DMRHOSTS}
 curl 'https://barrandovhblink.jednoduse.cz/dmrcz/user.csv' 2>/dev/null > ${RADIOIDDB}
 curl 'https://barrandovhblink.jednoduse.cz/dmrcz/groups.txt' 2>/dev/null > ${GROUPSTXT}
 curl 'https://barrandovhblink.jednoduse.cz/dmrcz/stripped.csv' 2>/dev/null > ${STRIPPED}
